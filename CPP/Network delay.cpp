@@ -5,7 +5,7 @@ public:
         for(auto i : times){
             graph[i[0]].push_back({i[1],i[2]});
         }
-        vector<int> dis(n+1,INT_MAX);
+        vector<int> dis((n+1),INT_MAX);
         priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq;
         dis[k] = 0;
         pq.push({0,k});
