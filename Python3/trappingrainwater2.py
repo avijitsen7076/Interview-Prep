@@ -19,7 +19,7 @@ class Solution:
             cur_h, x, y = heappop(heap)
             level = max(level, cur_h)
             
-            for r, c in [(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)]:
+            for r, c in [((x + 1), y), (x - 1, y), (x, y + 1), (x, y - 1)]:
                 if 0 <= r < row and 0 <= c < col and heightMap[r][c] != -1:
                     heappush(heap, (heightMap[r][c], r, c))
                 
