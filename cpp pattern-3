@@ -1,0 +1,21 @@
+int main()
+{
+    int n;
+    cin >> n;
+    char number = 65;
+    int i = 1;
+    while (i <= n)
+    {
+
+        int j = 1;
+        while (j <= n)
+        {
+            cout << number;
+            j++;
+            number++;
+        }
+        cout << endl;
+        i++;
+
+    }
+}
