@@ -1,0 +1,17 @@
+int Sum1toN(int n)
+{
+    int number = 1, sum = 0;
+    while (number <= n)
+    {
+        sum = sum + number;
+        number++;
+    }
+    return sum;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    cout << Sum1toN(n);
+}
