@@ -22,4 +22,5 @@ int number=1;
         i++;
         number++;
     }
+return 0;
 }
